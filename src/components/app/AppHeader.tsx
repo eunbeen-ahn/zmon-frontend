@@ -1,12 +1,12 @@
 import React from "react";
 import 'styles/App.css';
 
-const AppHeader = () => {
+function AppHeader () {
   return (
     <header className="App-header">
-      Hello
+      home
     </header>
   )
-};
+}
 
 export default AppHeader
