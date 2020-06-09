@@ -1,25 +1,26 @@
 import React from 'react';
+import 'styles/App.css';
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
   Switch,
 } from 'react-router-dom';
-import AppHeader from './app/AppHeader';
-import Home from '../pages/Home';
+import Home from './pages/Home';
+import Todo from './pages/Todo';
 
-function AppRouter() {
+function App() {
   return (
-    <Router>
-      <>
-        <AppHeader />
+    <div className="App">
+      <Router>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/todos" exact component={Todo} />
           <Redirect from="*" to="/" />
         </Switch>
-      </>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
-export default AppRouter;
+export default App;

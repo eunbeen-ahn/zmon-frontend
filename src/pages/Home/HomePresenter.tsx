@@ -1,5 +1,6 @@
 import React from 'react';
-import Greetings from '../../components/atoms/Greeting';
+import Greetings from 'components/atoms/Greeting';
+import PageTemplate from 'components/templates/PageTemplate';
 
 interface Props {
   name: string;
@@ -8,12 +9,14 @@ interface Props {
 
 function HomePresenter({ name, items }: Props) {
   return (
-    <div>
-      <Greetings name={name} />
-      <ul>
-        {items && items.map((item) => <li key={item.id}>{item.name}</li>)}
-      </ul>
-    </div>
+    <PageTemplate>
+      <div>
+        <Greetings name={name} />
+        <ul>
+          {items && items.map((item) => <li key={item.id}>{item.name}</li>)}
+        </ul>
+      </div>
+    </PageTemplate>
   );
 }
 
