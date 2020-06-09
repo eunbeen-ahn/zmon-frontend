@@ -1,22 +1,20 @@
-import React from "react";
-import Greetings from "../../components/atoms/Greeting";
+import React from 'react';
+import Greetings from '../../components/atoms/Greeting';
 
 interface Props {
   name: string;
   items?: any[];
 }
 
-function HomePresenter ({ name, items }: Props) {
+function HomePresenter({ name, items }: Props) {
   return (
     <div>
-      <Greetings name={name}/>
+      <Greetings name={name} />
       <ul>
-        {items && items.map(item => (
-          <li key={item.id}>{item.name}</li>
-        ))}
+        {items && items.map((item) => <li key={item.id}>{item.name}</li>)}
       </ul>
     </div>
-  )
+  );
 }
 
 export default HomePresenter;

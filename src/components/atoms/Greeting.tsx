@@ -14,7 +14,7 @@ function Greetings({ name, mark }: Props) {
 }
 
 Greetings.defaultProps = {
-  mark: '!'
+  mark: '!',
 };
 
 export default Greetings;

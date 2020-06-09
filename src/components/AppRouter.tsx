@@ -12,14 +12,14 @@ function AppRouter() {
   return (
     <Router>
       <>
-        <AppHeader/>
+        <AppHeader />
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Redirect from="*" to="/"/>
+          <Route path="/" exact component={Home} />
+          <Redirect from="*" to="/" />
         </Switch>
       </>
     </Router>
-  )
-};
+  );
+}
 
 export default AppRouter;
