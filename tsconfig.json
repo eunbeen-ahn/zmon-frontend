@@ -16,7 +16,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "resolvgieJsonModule": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": "./src"
   },
