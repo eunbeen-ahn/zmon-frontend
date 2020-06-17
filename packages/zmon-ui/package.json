@@ -2,7 +2,7 @@
   "name": "@zmon/ui",
   "version": "0.1.0",
   "main": "dist/zmon-gnb.js",
-  "module": "",
+  "module": "dist/zmon-gnb.mjs",
   "jsnext:main": "dist/zmon-gnb.mjs",
   "scripts": {
     "prebuild": "eslint lib",
