@@ -9,12 +9,10 @@ $ yarn build
 ## Usage
 ```
 import React from "react";
-import { GNB } from "@zmon/ui-react"
+import { GNB as ZGNB } from '@zmon/ui-react'
+import '@zmon/ui-react/dist/index.css'
 
-export default function Header() {
-  return (
-    <GNB/>
-  );
+export default function GNB() {
+  return <ZGNB/>
 }
-
 ```
