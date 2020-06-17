@@ -1,5 +1,5 @@
 import React from 'react';
-import 'packages/zmon-app/src/pages/Todo/Todo.css';
+import 'pages/Todo/Todo.css';
 import { Todo, useTodosDispatch } from 'contexts/TodosContext';
 
 export type TodoItemProps = {

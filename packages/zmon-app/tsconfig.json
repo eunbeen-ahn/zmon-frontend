@@ -26,6 +26,6 @@
     "scripts"
   ],
   "include": [
-    "packages/zmon-app/src/**/*"
+    "src/**/*"
   ]
 }

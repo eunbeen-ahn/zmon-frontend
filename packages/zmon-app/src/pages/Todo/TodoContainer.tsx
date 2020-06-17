@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoPresenter from './TodoPresenter';
-import { TodosContextProvider } from 'packages/zmon-app/src/contexts/TodosContext';
+import { TodosContextProvider } from 'contexts/TodosContext';
 
 function TodoContainer() {
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { dummyApi } from 'packages/zmon-app/src/api';
+import { dummyApi } from 'api';
 import HomePresenter from './HomePresenter';
 
 const loggedInUserName = 'zmon';

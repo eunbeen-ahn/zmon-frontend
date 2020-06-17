@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoItem from '../molecules/TodoItem';
-import { useTodosState } from 'packages/zmon-app/src/contexts/TodosContext';
+import { useTodosState } from 'contexts/TodosContext';
 
 function TodoList() {
   const todos = useTodosState();

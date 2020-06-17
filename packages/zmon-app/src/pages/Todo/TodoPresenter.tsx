@@ -1,7 +1,7 @@
 import React from 'react';
-import TodoForm from 'packages/zmon-app/src/components/organisms/TodoForm';
-import TodoList from 'packages/zmon-app/src/components/organisms/TodoList';
-import PageTemplate from 'packages/zmon-app/src/components/templates/PageTemplate';
+import TodoForm from 'components/organisms/TodoForm';
+import TodoList from 'components/organisms/TodoList';
+import PageTemplate from 'components/templates/PageTemplate';
 
 function TodoPresenter() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import Greetings from 'packages/zmon-app/src/components/atoms/Greeting';
-import PageTemplate from 'packages/zmon-app/src/components/templates/PageTemplate';
+import Greetings from 'components/atoms/Greeting';
+import PageTemplate from 'components/templates/PageTemplate';
 
 interface Props {
   name: string;

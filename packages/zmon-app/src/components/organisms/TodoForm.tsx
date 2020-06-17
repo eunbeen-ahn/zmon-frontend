@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTodosDispatch } from 'packages/zmon-app/src/contexts/TodosContext';
+import { useTodosDispatch } from 'contexts/TodosContext';
 import TextInput from '../atoms/TextInput';
 
 function TodoForm() {

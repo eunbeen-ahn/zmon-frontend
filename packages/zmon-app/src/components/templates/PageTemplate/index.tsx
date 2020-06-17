@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
-import Header from 'components/organisms/Header';
+import Header from 'components/organisms/LNB';
+import GNB from 'components/organisms/GNB';
 
 interface Props {
   children: any; // TODO: set correct type
@@ -12,6 +13,7 @@ interface Props {
 const PageTemplate = ({ children, ...props }: Props) => {
   return (
     <div className="Container" {...props}>
+      <GNB/>
       <Header />
       <section className="Content">{children}</section>
       {/*  <Footer />*/}

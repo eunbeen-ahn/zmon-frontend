@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import 'packages/zmon-app/src/styles/App.css';
+import Avatar from 'components/atoms/Avatar';
 
 export default withRouter(({ location: { pathname } }) => (
   <header className="App-header">
@@ -13,5 +13,6 @@ export default withRouter(({ location: { pathname } }) => (
         <Link to="/todos">Todos</Link>
       </li>
     </ul>
+    <Avatar name="test name" imageUrl="test url" />
   </header>
 ));

@@ -1,5 +1,5 @@
 import React from 'react';
-import 'packages/zmon-app/src/styles/App.css';
+import 'styles/App.css';
 import {
   BrowserRouter as Router,
   Route,
