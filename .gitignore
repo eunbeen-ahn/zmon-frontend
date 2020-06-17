@@ -26,5 +26,6 @@ yarn-error.log*
 
 # packages
 packages/**/*/.cache
+packages/**/*/node_modules
 packages/**/*/build
 packages/zmon-ui-react/dist

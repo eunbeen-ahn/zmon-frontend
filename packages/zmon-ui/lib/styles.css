@@ -1,0 +1,12 @@
+#gnb {
+    float: right;
+    background: red;
+    height: 50px;
+    width: 300px;
+}
+
+#gnb a {
+    font-size: 25px;
+    margin-right: 10px;
+    line-height: 50px;
+}
