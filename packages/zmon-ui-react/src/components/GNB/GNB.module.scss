@@ -1,0 +1,15 @@
+.gnb {
+  background: #777;
+  height: 50px;
+
+  display: flex;
+  align-content: center;
+
+  img {
+  }
+  a {
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 50px;
+  }
+}

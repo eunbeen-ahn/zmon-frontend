@@ -4,29 +4,32 @@
   (global = global || self, factory(global.$zmon = {}));
 }(this, (function (exports) { 'use strict';
 
-  var serviceList = [{
-    id: 1,
-    name: 'Grafana',
-    url: 'https://mon.cloudz.co.kr'
-  }, {
-    id: 2,
-    name: 'ZMC',
-    url: 'https://mon.cloudz.co.kr/alert-manager'
-  }];
-  var getGNB = function getGNB(gnbEl) {
-    // const gnbEl = document.getElementById("gnb");
-    // console.log(gnbEl);
-    if (gnbEl) {
-      for (var i = 0; i < serviceList.length; i++) {
-        var service = serviceList[i];
-        var menuItem = document.createElement("a");
-        menuItem.href = service.url;
-        menuItem.target = "_self";
-        var text = document.createTextNode(service.name);
-        menuItem.appendChild(text);
-        gnbEl.appendChild(menuItem);
+  var SERVICES = [
+      {
+          "id": 1,
+          "name": "Grafana",
+          "url": "https://mon.cloudz.co.kr"
+      },
+      {
+          "id": 2,
+          "name": "ZMC",
+          "url": "https://mon.cloudz.co.kr/alert-manager"
       }
-    }
+  ];
+  var serviceList = SERVICES;
+
+  var getGNB = function (gnbEl) {
+      if (gnbEl) {
+          for (var i = 0; i < serviceList.length; i++) {
+              var service = serviceList[i];
+              var menuItem = document.createElement("a");
+              menuItem.href = service.url;
+              menuItem.target = "_self";
+              var text = document.createTextNode(service.name);
+              menuItem.appendChild(text);
+              gnbEl.appendChild(menuItem);
+          }
+      }
   };
 
   function styleInject(css, ref) {

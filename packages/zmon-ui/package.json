@@ -4,18 +4,22 @@
   "main": "dist/zmon-gnb.js",
   "module": "dist/zmon-gnb.mjs",
   "jsnext:main": "dist/zmon-gnb.mjs",
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "prebuild": "eslint lib",
-    "build": "rollup -c",
-    "watch": "rollup -c -w",
-    "pretest": "rollup -c"
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build:js": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly && yarn build:js",
+    "build": "yarn build:js"
   },
   "author": "zmon@sk.com",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@zmon/shared": "^1.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "babel-eslint": "^7.1.1",
@@ -30,7 +34,10 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-tslint": "^0.2.2",
+    "rollup-plugin-typescript2": "^0.27.1",
     "rollup-plugin-url": "^3.0.1",
-    "rollup-watch": "^4.0.0"
+    "rollup-watch": "^4.0.0",
+    "typescript": "^3.9.5"
   }
 }

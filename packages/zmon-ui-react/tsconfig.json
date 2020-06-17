@@ -8,6 +8,7 @@
     "allowJs": false,
     "jsx": "react",
     "declaration": true,
+    "declarationDir": "build/@types",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -20,5 +21,5 @@
     "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "build"]
 }

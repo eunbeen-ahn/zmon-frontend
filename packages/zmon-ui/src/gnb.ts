@@ -1,11 +1,6 @@
-const serviceList = [
-  { id: 1, name: 'Grafana', url: 'https://mon.cloudz.co.kr' },
-  { id: 2, name: 'ZMC', url: 'https://mon.cloudz.co.kr/alert-manager' }
-];
+import { serviceList } from '@zmon/shared/menu'
 
-export const getGNB = (gnbEl) => {
-  // const gnbEl = document.getElementById("gnb");
-  // console.log(gnbEl);
+export const getGNB = (gnbEl: any) => {
   if (gnbEl) {
     for (let i = 0; i < serviceList.length; i++) {
       const service = serviceList[i];

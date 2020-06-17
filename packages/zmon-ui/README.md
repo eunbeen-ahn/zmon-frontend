@@ -1,7 +1,7 @@
 ### 1. UMD
 ```
 <div id="gnb"></div>
-<script src="./zmon-gnb.js"></script>
+<script src="./zmon-gnb.ts"></script>
 <script>
     const { getGNB } = $zmon;
     window.addEventListener("load", function() {

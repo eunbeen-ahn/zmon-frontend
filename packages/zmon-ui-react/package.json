@@ -2,13 +2,21 @@
   "name": "@zmon/ui-react",
   "version": "0.1.0",
   "main": "build/index.js",
+  "module": "build/index.js",
   "source": "build/index.css.map",
+  "types": "build/types/index.d.ts",
+  "files": [
+    "/build"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.ts",
-    "build": "parcel build src/index.ts -d build --public-url ./"
+    "build:js": "parcel build src/index.ts -d build --public-url ./",
+    "build": "tsc --emitDeclarationOnly && yarn build:js",
+    "watch": "parcel watch src/index.ts -d build --public-url ./"
   },
   "dependencies": {
+    "@zmon/shared": "^1.0.0",
     "global": "^4.4.0",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
@@ -22,6 +30,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "postcss-modules": "^1.5.0"
+    "postcss-modules": "^1.5.0",
+    "typescript": "^3.9.5"
   }
 }
