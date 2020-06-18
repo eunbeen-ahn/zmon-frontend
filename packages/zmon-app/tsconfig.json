@@ -4,12 +4,15 @@
     "target": "es6",
     "jsx": "preserve",
     "noEmit": true,
-    "strict": true,
     "lib": [
+      "es6",
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,7 +25,8 @@
     "typeRoots": [
       "./node_modules/@types/",
       "./src/typings"
-    ]
+    ],
+    "strict": true
   },
   "exclude": [
     "node_modules",

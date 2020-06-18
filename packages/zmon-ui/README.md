@@ -1,4 +1,5 @@
-### 1. UMD
+## Installation
+### UMD
 ```
 <div id="gnb"></div>
 <script src="./zmon-gnb.ts"></script>
@@ -11,7 +12,7 @@
 </script>
 ```
 
-### 2. ES6 Module import
+### ES6 Module
 ```
 <div id="gnb"></div>
 <script type="module">

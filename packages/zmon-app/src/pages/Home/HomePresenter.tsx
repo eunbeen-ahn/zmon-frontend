@@ -1,6 +1,6 @@
 import React from 'react';
 import Greetings from 'components/atoms/Greeting';
-import PageTemplate from 'components/templates/PageTemplate';
+import PageTemplate from 'components/templates/PageTemplate/PageTemplate';
 
 interface Props {
   name: string;

@@ -15,13 +15,13 @@ yarn workspaces 를 사용하여 모듈간 참조
 └── package.json
 ```
 
-## 설치
+## Installation
 ```
 $ cd zmon-frontend
 $ yarn install
 ```
 
-## 실행
+## Execution
 - for Development
     ```
     $ cd zmon-frontend/zmon-app

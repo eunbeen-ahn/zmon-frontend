@@ -1,0 +1,21 @@
+.App-nav {
+    display: flex;
+    align-items: center;
+    background-color: #282c34;
+    width: 100%;
+    height: 150px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-nav ul {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.App-nav ul > li{
+    width: auto;
+    height: 50px;
+    text-align: center;
+    padding-right: 20px;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import 'styles/App.css';
 import {
   BrowserRouter as Router,
   Route,
@@ -8,18 +7,18 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Todo from './pages/Todo';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/todos" exact component={Todo} />
-          <Redirect from="*" to="/" />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/todos" exact component={Todo} />
+        <Route path="/dashboard" exact component={Dashboard} />
+        <Redirect from="*" to="/" />
+      </Switch>
+    </Router>
   );
 }
 
